@@ -1,0 +1,77 @@
+﻿body, html{
+	background-color:white;
+	height: 100%;
+}
+* {
+	margin:0;
+}
+.wrapper {
+	min-height:100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+	width:960px;
+	background-image:url(grid.gif);
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+
+.footer, .push {
+	width: 960px;
+	margin:0 auto;
+	text-align:center;
+	height: 4em;
+}
+
+#main{
+	height:100%;
+}
+#headerTop {
+	height:15px;
+}
+#header {
+	text-align:center;
+	margin-top:3%;
+	background-color:#1CC11F;
+}
+#headerImageDiv {
+	margin:0 auto;
+	width:960px;
+}
+#body {
+	margin:0 auto;
+	width:960px;
+	margin-top:3%;
+}
+#whatImDoing {
+	text-align:center;
+	margin-top:6%;
+}
+#whatImDoingSpinner {
+	display:block;
+	text-align:center;
+	margin-top:4%;
+}
+#seperatorOne{
+	text-align:center;
+	margin-top:15%;
+}
+#whatIveDone {
+	text-align:center;
+	margin-top:6%;
+}
+#whatIveDoneColumns {
+	margin-top:3%;
+}
+#taggstr {
+	float:left;
+	margin-left:20%;
+}
+#cboxgames {
+	float: right;
+	margin-right:20%;
+}
+.clear-both {
+   clear: both;
+}

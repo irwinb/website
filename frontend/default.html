@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" >
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onresize="startSpinner()" onload="startSpinner()">
+
+<script type="text/javascript" src="spin.min.js"></script>
+<script type="text/javascript">
+	var spinner = null;
+	function startSpinner() {
+		var opts = {
+		  lines: 11, // The number of lines to draw
+		  length: 7, // The length of each line
+		  width: 4, // The line thickness
+		  radius: 10, // The radius of the inner circle
+		  corners: 1, // Corner roundness (0..1)
+		  rotate: 0, // The rotation offset
+		  color: '#000', // #rgb or #rrggbb
+		  speed: 1, // Rounds per second
+		  trail: 60, // Afterglow percentage
+		  shadow: false, // Whether to render a shadow
+		  hwaccel: false, // Whether to use hardware acceleration
+		  className: 'spinner', // The CSS class to assign to the spinner
+		  zIndex: 2e9, // The z-index (defaults to 2000000000)
+		  top: 'auto', // Top position relative to parent in px
+		  left: 'auto' // Left position relative to parent in px
+		};
+		var target = document.getElementById('whatImDoingSpinner');
+		if (spinner != null) {
+			spinner.stop();
+			delete spinner;
+		}
+		spinner = new Spinner(opts).spin(target);
+	}
+</script>
+
+<a href="https://github.com/irwinb"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+<div class="wrapper">
+<div id="main">
+	<div id="headerTop">
+	</div>
+	<div id="header">
+		<div id="headerImageDiv">
+			<img alt="Irwin Billing" src="title.png">
+		</div>
+	</div>
+	
+	<div id="body">
+		<div id="whatImDoing">
+			<img alt="What I'm Doing" src="what_im_doing.png">
+		</div>
+		<div id="whatImDoingSpinner">
+		</div>
+		
+		<div id="seperatorOne">
+			<img alt="seperator" src="seperator.gif">
+		</div>
+	
+		<div id="whatIveDone">
+			<img alt="What I'm Doing" src="what_ive_done.png">
+		</div>
+		
+		<div id="whatIveDoneColumns">
+		    <div id="taggstr">
+		    	<a href="http://www.crunchbase.com/company/taggstr" target="_blank">
+		    		<img alt="What I'm Doing" src="taggstr.png" >
+		    	</a>
+			</div>
+		    <div id="cboxgames">
+				<a href="http://www.cboxgames.com/about.html" target="_blank">
+		    		<img alt="What I'm Doing" src="cbox.gif" >
+		    	</a>
+			</div>
+			<div class="clear-both"></div>
+		</div>	
+	</div>
+	
+</div>
+<div class="push"></div>
+</div>
+
+<div class="footer">
+	<p>Footer.</p>
+</div>
+
+</body>
+
+</html>
