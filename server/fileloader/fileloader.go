@@ -18,7 +18,7 @@ func GetFile(c appengine.Context, p string) ([]byte, error) {
 	return item.Value, nil
 }
 
-// Read file from file and cache it.
+// Read file from disk and cache it.
 func storeInCache(c appengine.Context, p string) ([]byte, error) {
 	b, e := ioutil.ReadFile(p)
 
