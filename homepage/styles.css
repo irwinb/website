@@ -62,15 +62,15 @@
 	margin-top:6%;
 }
 #whatIveDoneColumns {
-	margin-top:3%;
+	margin-top:5%;
 }
 #taggstr {
 	float:left;
-	margin-left:20%;
+	margin-left:25%;
 }
 #cboxgames {
 	float: right;
-	margin-right:20%;
+	margin-right:25%;
 }
 .clear-both {
    clear: both;
