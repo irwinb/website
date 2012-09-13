@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-var ROOT_DIR string = "homepage"
+const ROOT_DIR string = "homepage"
 
 func init() {
 	http.HandleFunc("/", index)
@@ -17,7 +17,7 @@ func init() {
 func index(w http.ResponseWriter, r *http.Request) {
 	c := appengine.NewContext(r)
 
-	var p string = "homepage"
+	var p string = ROOT_DIR
 	if r.URL.Path == "/" {
 		p += "/index.html"
 	} else {
